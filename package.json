@@ -1,0 +1,24 @@
+{
+  "name": "yue",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "copyfiles -u 1 -e src/index.coffee src/**/* dist && coffee -c -o dist/ src/index.coffee",
+    "dev": "copyfiles -u 1 -e src/index.coffee src/**/* dist && coffee -w -c -o dist/ src/index.coffee",
+    "clean": "rimraf dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khighness/yue.git"
+  },
+  "author": "Khighness",
+  "bugs": {
+    "url": "https://github.com/Khighness/yue/issues"
+  },
+  "homepage": "https://github.com/Khighness/yue",
+  "dependencies": {
+    "coffee-script": "^1.12.7",
+    "copyfiles": "^2.1.0",
+    "rimraf": "^2.6.3"
+  }
+}
